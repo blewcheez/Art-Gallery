@@ -1,0 +1,168 @@
+/*CSS styling*/
+
+/*Desktop and Tablet */
+/**/
+h1 {
+  font-size: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/*Paragraph specifications*/
+p {
+  text-align: center;
+  font-size: 17px; 
+}
+/* image sizes */
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+/*Body specifications*/
+body{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 182, 77) ;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:  center;
+}
+/*Line under "Art Gallery*/
+span{
+  position:relative;
+  top:1px;
+  display:inline-block;
+  border-bottom:1px solid #000000;
+}
+/*Captions under photos*/
+article {
+  background-color:rgb(245, 182, 67);
+  padding: 20px ;
+  font-size: 15px;
+  text-align: center; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: solid 1px; color: rgb(0, 0, 0);
+}
+
+  /* Footer for the bottom of the page */
+  footer{
+    background-color:rgb(245, 182, 67);
+    padding: 13px;
+    border: solid 1px; color: rgb(0, 0, 0);
+  }
+
+  /* Footer font size */
+  .FP{
+    font-size: 12px;
+  }
+
+
+/* Class element secifications */
+
+/*container for the body*/
+.container {
+  width: 1100px;
+  max-width: 100%;
+  margin:  0 auto;
+  
+}
+/*Rows for photos and captions*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+/*Photo cards*/
+.item 
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 20rem;
+  flex-direction: column;
+  margin: 15px 20px; 
+  padding: 15px 20px; 
+  align-self: normal;
+  align-items: center;
+}
+
+
+
+/*Mobile screen implementations*/
+@media screen and (max-width: 500px){
+/*container within the max width of 630px*/
+  .container {
+    width: 100%;
+    max-width: 500px;
+  }
+/*Photocards within the max width of 630px*/
+  .item {
+    width: 100%;
+    max-width: 500px;
+    border: 0px;
+    padding: 10px 15px;
+    margin: 5px 10px;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(109, 123, 139);
+    text-align: center;
+  }
+
+  span{
+    position:relative;
+    top:1px;
+    display:inline-block;
+    border-bottom:1px solid #AAA;
+}
+
+  /* Pages body element and styling */
+  body{
+    max-width: 500px;
+    background-color: rgb(37, 56, 85) ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:  center;
+  }
+
+  /* Paragraph styling */
+  p {
+    margin: 10px;
+    width: auto;
+    text-align: center;
+    font-size: 17px; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+  /* Caption for pictures */
+  article {
+    background-color: rgb(21, 40, 61);
+    padding: 20px ;
+    font-size: 15px;
+    text-align: center; 
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  /* Footer for the bottom of the page */
+  footer{
+    background-color: rgb(21, 37, 61);
+    padding: 13px;
+    border: solid 1px; color: white;
+  }
+
+  /* Footer font size */
+  .FP{
+    font-size: 12px;
+  }
+}
+
+/*Non-mobile screen implementations*/
+@media screen and (min-width: 630px){
+
+}
